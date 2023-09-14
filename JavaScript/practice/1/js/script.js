@@ -14,11 +14,22 @@ const personalMovieDB = {
   privat: false
 };
 
-const a = prompt('One of the last movies you watched?', '');
-const b = +prompt('How much do you rate it?', '');
-const s = prompt('One of the last movies you watched?', '');
-const d = +prompt('How much do you rate it?', '');
+for (let i = 0; i < 2; i++) {
+  let a = prompt('One of the last movies you watched?', '');
+  let b = +prompt('How much do you rate it?', '');
+  if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+    personalMovieDB.movies[a] = b;
+  } else {
+    i--;
+  }
+}
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[s] = d;
+if (personalMovieDB.count < 10) {
+  c('lower');
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30) {
+  c('middle');
+} else if (personalMovieDB.count > 30) {
+  c('hight');
+}
+
 c(personalMovieDB);
