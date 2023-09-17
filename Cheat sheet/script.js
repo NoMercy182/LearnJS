@@ -142,7 +142,6 @@ console.log(testMessage.slice(-5)); // вырезаем часть строки 
 
 console.log(testMessage.substring(3)); // тоже самое но не поддерживает отрицательных значений
 console.log(testMessage.substr(3, 1)); // c 3 индекса и второй аргумент колво символов
-
 // Numbers ---------------------------------------------------
 
 let testNum = 12.9;
