@@ -168,3 +168,10 @@ const funcDone = () => {
 };
 
 learnJS('Js', funcDone);
+
+// Алгоритмы -------------------------------------------------------------
+
+// https://web.archive.org/web/20221025084508/http://mathhelpplanet.com/static.php?p=javascript-algoritmy-poiska
+
+
+
