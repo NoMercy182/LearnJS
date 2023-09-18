@@ -90,4 +90,4 @@ function availableCurr(arr, missingCurr) {
   c(`Доступные валюты:${'\n'}${newArr.join('\n')}`)
 }
 
-availableCurr(newArr,'USD');
+availableCurr(newArr, 'USD');
