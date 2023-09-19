@@ -173,5 +173,72 @@ learnJS('Js', funcDone);
 
 // https://web.archive.org/web/20221025084508/http://mathhelpplanet.com/static.php?p=javascript-algoritmy-poiska
 
+// Объекты ---------------------------------------------------------------
+
+// Методы перебора объектов
+
+// for in — цикл по объекту. Можно получить и ключ и значение.
+// Object.entries() — метод, возвращающий массив пар [key, value]
+// Object.keys() — метод, который возвращает массив ключей [key1, key2]
+// Object.values() — метод, который возвращает массив значений [value1, value2]
+
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+// Массивы ---------------------------------------------------------------
+
+const testArray = [1, 2, 3, 6, 8];
+
+testArray.pop(); // удаляет элемент в конце массива
+testArray.push(10); // добавляет элемент в конец массива
+
+for (let i = 0; i < testArray.length; i += 1) {
+  console.log(testArray[i]);
+}
+
+for (let value of testArray) {
+  console.log(value);
+}
+
+const testArray2 = [1, 2, 3, 6, 8, 10];
+
+testArray2.forEach(function(item, i, arr) {       // for.Each
+  console.log(`${i}: ${item} in array ${arr}`);
+});
+
+// testArr.shift();           // удаляет первый элемент
+// testArr.unshift();         // добавляет элемент в начало массива
+// testArr.split(',');        // превращает строку в массив
+// testArr.join(' ');         // превращает массив в строку
+// delete testArr[1];         // удаляет второй элемент
+// testArr.splice(0, 5, 4);   // удалить 5 элементов с индекса ноль и добавить число 4
+// testArr.slice(0, 5);       // копирует часть массива с индекса 0 до 5 не включая
+// testArr.sort();            // сорт массива, если не передать fn - сорт элементы как строки
+// testArr.reverse();         // меняет порядок элементов на обратный
+// testArr.concat(3);         // создает нью массив в который все копирует и добав нью элемент
+
+let testArr = [14, 32, 65, 97, 0, 23, 44, 82];
+
+let sortTestArr = testArr.sort(compareNum); // отсортировали и засунули в нью массив
+
+function compareNum(a, b) {   // функция сортировки чисел
+  return a - b;
+}
+
+console.log(testArr);
+console.log(sortTestArr);
+
+// Динамическая типизация JS -------------------------------------------------------
+
+// to boolean
+
+// 0, '', null, undefined, NaN; - false
+
+// let switcher = null;
+
+// if (switcher) {
+//   console.log('Working...');
+// }
+
+// console.log(typeof(!!"444")); преобразуем в bool
 
 
