@@ -45,8 +45,8 @@ c(c1);
 c(c2);  
 c(c3);
 
-console.log(true / false);
+// console.log(true / false);
 
-let y = 1;
-let x = y = 2;
-console.log(x);
+// let y = 1;
+// let x = y = 2;
+// console.log(x);
